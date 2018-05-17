@@ -1,4 +1,4 @@
-package com.slowstarter.kotlin
+package com.slowstarter.kotlin.functions
 
 
 fun <T> joinToString1(collection: Collection<T>,
