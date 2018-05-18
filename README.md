@@ -1,6 +1,8 @@
 # kotlin_basic
 
 # 함수(Function)
+    일반함수
+    로컬함수
     확장함수(Extension-Function)
 
 # 예외(Exception)
