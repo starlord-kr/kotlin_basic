@@ -12,6 +12,7 @@ fun example1() {
     println(set2);
 
     // to 는 일반함수 입니다
+    // infix-call(중위함수)
     val map1 = hashMapOf(1 to "One", 7 to "Seven", 53 to "fifty-three")
     println(map1);
     val map2 = hashMapOf<Int, String>(1 to "One", 7 to "Seven", 53 to "fifty-three")
