@@ -60,6 +60,16 @@ class Client2(val name: String, val postalCode: Int) {
     override fun toString(): String = "Client(name=$name, postalCode=$postalCode)"
 }
 
+/**
+ * data 변경자를 class에 사용하면 컴파일러가 equals, hashCode, toString 메서드를 자동으로 만들어준다
+ *
+ * 1. 인스턴스 간 비교를 위한 equals
+ * 2. HashMap과 같은 해시 기반 컨테이너에서 키로 사용할 수 있는 hashCode
+ * 3. 클래스의 각 필드를 선언 순서대로 표시하는 문자열을 만들어주는 toString
+ *
+ */
+data class Client3(val name: String, val postalCode: Int)
+
 fun main(args: Array<String>) {
 
     val client1 = Client("number2", 12345)
@@ -105,4 +115,10 @@ fun main(args: Array<String>) {
     val processed2 = hashSetOf(client2_1)
     println(processed2.contains(client2_2))
     println(client2_1 == client2_2)
+
+    print("CASE6 : ")
+    val client5_1 = Client3("bond", 11111)
+    val client5_2 = Client3("bond", 11111)
+    println(client5_1 == client5_2)
+
 }
