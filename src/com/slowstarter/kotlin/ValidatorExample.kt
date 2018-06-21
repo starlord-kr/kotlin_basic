@@ -34,7 +34,7 @@ fun saveUser3(user: User) {
 
     fun validate(value: String, fieldName: String) {
         if(value.isEmpty()) {
-            throw IllegalArgumentException("Can't save user ${user.id}: empty $fieldName.")
+            throw IllegalArgumentException("Can't save user ${user.id}: empty $fieldName.") as Throwable
         }
     }
 
